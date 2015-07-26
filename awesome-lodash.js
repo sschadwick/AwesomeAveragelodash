@@ -30,7 +30,7 @@ $(document).ready(function() {
   awesomeIndex: 6
   }];
 
-  var i = 1;
+  var i = 1; //set counter to 1, as _.reduce will iterate (arr.length - 1) times
 
   var arrayOfAwesomeIndexes = _.pluck(information, 'awesomeIndex');
   //grab each value of awesomeIndex, store in an array.
