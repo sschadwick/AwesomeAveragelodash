@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var information = [
+  var information = [ //given array of information
   {
   name: 'Trinity',
   occupation: 'programmer',
@@ -35,11 +35,11 @@ $(document).ready(function() {
   var arrayOfAwesomeIndexes = _.pluck(information, 'awesomeIndex');
   //grab each value of awesomeIndex, store in an array.
 
+  //remove flasy values with compact, reduce all remaining values into a single sum
   var awesomeTotal = _.reduce(_.compact(arrayOfAwesomeIndexes), function(a, b) {
     i++;
     return a + b;
   })
-  //remove falsy values from array, reduce all remaining values into a single sum
 
   var awesomeAverage = awesomeTotal / i; //calculate average
 
